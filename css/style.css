@@ -1,0 +1,310 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --dark-color:#19283f;
+    --green-color: hsl(178, 63%, 51%);
+    --yellow-color: #ffc400;
+    --red-color: #ff3150;
+    --section-color: #eff7fa;
+}
+
+
+body{
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+margin: 0;
+
+
+}
+/* start navbar */
+.navbar{
+    background-color: var(--dark-color);
+    
+}
+
+.navbar  .navbar-nav .nav-item .nav-link{
+    color: white;
+    margin-left:10px;
+    margin-right: 10px;
+}
+.search{
+    border-left: solid 2px var(--green-color);
+    
+}
+.search svg{
+    color: var(--green-color);
+}
+.main-btn{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+.main-btn:hover{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+
+.navbar-toggler{
+  border-color: white;
+  outline: none;
+
+}
+.navbar-toggler svg:focus{
+    outline: none;
+}
+.navbar-toggler svg{
+    color: white;
+}
+.navbar .navbar-nav  .nav-item  .active{
+    color: var(--green-color);
+}
+/* end navbar */
+
+/* start get */
+.get-start{
+    background-color: var(--dark-color);
+    height: 500px;
+    padding: 50px;
+}
+/* end get */
+
+/* start good-at */
+
+.main-title::after{
+content: "";
+position: absolute;
+width: 100px;
+height: 2px;
+background-color: var(--green-color);
+transform: translateX(-50%);
+
+}
+
+.good-at .icon-holder{
+    height: 200px;
+}
+.good-at .icon-holder svg{
+    left: 50%;
+transform: translateX(-50%);
+}
+.good-at .icon-holder .number{
+    font-size: 12rem;
+    color: var(--section-color);
+}
+
+.good-at .icon-holder .icon{
+    font-size: 4rem;
+    color: var(--green-color);
+    
+}
+
+.good-at .row h3{
+    color: var(--yellow-color);
+}
+
+/* end good-at */
+
+/* start our-work */
+.our-work{
+    background-color: var(--section-color);
+}
+
+.our-work .link a .active{
+   background-color: var(--red-color);
+   color: var(--yellow-color);
+  
+}
+.our-work .link a:hover{
+    color: red;
+}
+.our-work .box{
+    border: solid 5px white;
+   position: relative;
+   overflow: hidden;
+  
+}
+
+.our-work .box::before{
+    content:attr(data-work);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: var(--green-color);
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    transform: translateX(-100%);
+    transition: 0.3s;
+    
+}   
+.our-work .box:hover::before{
+    transform: translateX(0);
+}
+/* end our-work */
+
+/* start stuff */
+.stuff .p p{
+    width: 500px;
+    margin:  auto;
+}
+/* end Stuff */
+
+/* start team  */
+.team  h1{
+    color: var(--yellow-color);
+}
+.team{
+    background-color: var(--section-color);
+}
+.team .box  {
+    width: 250px;
+    background-color: white;
+    padding: 0;
+    box-shadow: #f1e1bb 0px 0px 16px 4px;
+   margin: auto;
+}
+
+.team .box h2{
+    background-color: var(--green-color);
+    color: white;
+    
+    
+}
+
+/* end team  */
+
+/* start project */
+.start-project{
+    background-color: var(--dark-color);
+}
+/* end project */
+
+/* start search */
+.Subscribe{
+    background-color: var(--yellow-color);
+}
+.Subscribe h4{
+    color: var(--dark-color);
+}
+.Subscribe input[type="text"]{
+    background-color: transparent;
+    border: none;
+    border-bottom: white 2px solid;
+
+}
+.Subscribe input::placeholder{
+    color: white;
+}
+.Subscribe input[type="text"]:focus{
+    outline: none;
+   
+
+}
+
+.Subscribe button[type="button"]{
+    background-color: var(--dark-color);
+    color: var(--yellow-color);
+
+}
+/* end search */
+
+/* start footer */
+.footer{
+    background-color: var(--dark-color);
+}
+.footer .info .created>span{
+    color: var(--green-color);
+}
+
+.footer .info .created div span{
+    color: var(--yellow-color);
+}
+
+ .facebook{
+background-color: #1877f2;
+height: 20px;
+width: 20px;
+}
+ .twitter{
+    background-color: #1da1f2;
+    height: 20px;
+width: 20px;
+}
+ .linkedin{
+    background-color: #0a66c2;
+    height: 20px;
+    width: 20px;
+}
+ .youtube{
+    background-color: #ff0000;
+    height: 20px;
+width: 20px;
+}
+
+/* end footer */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* start navbar */
+/* .navbar .container {
+background-color: var(--dark-color);
+padding: 10px;
+
+}
+
+.navbar .navbar-nav  .nav-item .nav-link{
+    color: white;
+}
+.navbar .navbar-nav  .nav-item  .active{
+    color: var(--green-color);
+}
+.navbar .container .search-icon {
+border-left: solid 1px var(--green-color);
+}
+.navbar .search-icon svg{
+color: var(--green-color);
+}
+.main-btn{
+background-color: var(--red-color);
+color: var(--yellow-color);
+
+}
+.main-btn:hover{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+} */
+/* end navbar */
+
+/* start scroll */
+/* .scroll{
+    width: 100px;
+    background-color: var(--green-color);
+    height: 4px;
+} */
+/* end scroll */
